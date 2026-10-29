@@ -332,7 +332,7 @@ const Shop = () => {
   const isNewCategory = activeCategory.toLowerCase() === 'new';
   const is404Active = activeCategory.toLowerCase() === 'lehenga' || searchParams.get('error') === '404' || searchParams.get('status') === '404';
 
-  const has500Error = searchParams.get('error') === '500' || searchParams.get('status') === '500';
+  const has500Error = isBestsellerCategory || searchParams.get('error') === '500' || searchParams.get('status') === '500';
   if (has500Error) {
     return (
       <PageTransition>
@@ -434,14 +434,7 @@ const Shop = () => {
             >
               <button
                 type="button"
-                onClick={() => {
-                  setSearchParams(prev => {
-                    const next = new URLSearchParams(prev);
-                    next.delete('error');
-                    next.delete('status');
-                    return next;
-                  });
-                }}
+                onClick={() => setSearchParams({ category: "All" })}
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -458,7 +451,7 @@ const Shop = () => {
                 }}
               >
                 <RefreshCw size={15} />
-                Reload Page
+                Explore Other Collections
               </button>
 
               <Link

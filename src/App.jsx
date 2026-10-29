@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 import Preloader from './components/ui/Preloader';
@@ -70,6 +70,7 @@ function App() {
             <Routes location={location} key={location.pathname}>
               <Route path="/" element={<Home />} />
               <Route path="/shop" element={<Shop />} />
+              <Route path="/bestsellers" element={<Navigate to="/shop?category=Bestsellers" replace />} />
               <Route path="/shop/:id" element={<ProductDetail />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/checkout" element={<Checkout />} />
