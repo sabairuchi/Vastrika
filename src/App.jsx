@@ -1,4 +1,3 @@
-import Test500 from './pages/Test500';
 import { useEffect, useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
