@@ -330,6 +330,7 @@ const Shop = () => {
   const isBestsellerCategory = activeCategory.toLowerCase() === 'bestsellers';
   const isSaleCategory = activeCategory.toLowerCase() === 'sale';
   const isNewCategory = activeCategory.toLowerCase() === 'new';
+  const is404Active = activeCategory.toLowerCase() === 'lehenga' || searchParams.get('error') === '404' || searchParams.get('status') === '404';
 
   const has500Error = searchParams.get('error') === '500' || searchParams.get('status') === '500';
   if (has500Error) {
@@ -1004,7 +1005,7 @@ const Shop = () => {
         <div className="container">
           {/* Controls Bar */}
           <div className="flex justify-between items-center mb-3">
-            <span className="text-label text-[var(--color-stone)] text-xs uppercase tracking-wider">{filteredProducts.length} pieces</span>
+            <span className="text-label text-[var(--color-stone)] text-xs uppercase tracking-wider">{is404Active ? '0 pieces — 404 Not Found' : `${filteredProducts.length} pieces`}</span>
           </div>
 
           <div className="flex flex-col gap-4 mb-8 border-b border-[var(--color-ink)]/20 pb-4 min-w-0 w-full">
@@ -1077,7 +1078,136 @@ const Shop = () => {
           {/* Product Grid */}
           <motion.div layout className="min-h-[50vh] px-0 sm:px-2 min-w-0 w-full">
             <AnimatePresence mode="popLayout">
-              {filteredProducts.length > 0 ? (
+              {is404Active ? (
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }} 
+                  animate={{ opacity: 1, y: 0 }} 
+                  exit={{ opacity: 0 }}
+                  style={{ 
+                    display: 'flex', 
+                    flexDirection: 'column', 
+                    alignItems: 'center', 
+                    justifyContent: 'center', 
+                    padding: 'var(--space-16) var(--space-4)', 
+                    textAlign: 'center',
+                    backgroundColor: 'var(--color-ivory)',
+                    borderRadius: '16px',
+                    border: '1px solid rgba(20,20,20,0.08)',
+                    margin: 'var(--space-4) 0'
+                  }}
+                >
+                  <span 
+                    style={{
+                      display: 'inline-block',
+                      fontSize: '11px',
+                      letterSpacing: '0.25em',
+                      textTransform: 'uppercase',
+                      color: '#8C4A5A',
+                      fontWeight: 600,
+                      marginBottom: 'var(--space-3)',
+                      borderBottom: '1px solid #EADBD5',
+                      paddingBottom: '4px'
+                    }}
+                  >
+                    404 Not Found — Collection Missing
+                  </span>
+
+                  <h3 
+                    style={{ 
+                      fontSize: 'clamp(4rem, 10vw, 7rem)', 
+                      lineHeight: 0.95,
+                      margin: '0 0 var(--space-4) 0',
+                      fontFamily: 'var(--font-heading)',
+                      fontWeight: 300,
+                      color: 'var(--color-ink)',
+                      letterSpacing: '-0.02em'
+                    }}
+                  >
+                    404
+                  </h3>
+
+                  <h4 
+                    style={{
+                      fontSize: 'clamp(1.3rem, 2.5vw, 1.85rem)',
+                      fontFamily: 'var(--font-heading)',
+                      fontWeight: 400,
+                      color: 'var(--color-ink)',
+                      marginBottom: 'var(--space-3)'
+                    }}
+                  >
+                    {activeCategory} Pieces Not Found
+                  </h4>
+
+                  <p 
+                    style={{ 
+                      fontSize: '1rem', 
+                      color: 'var(--color-stone)', 
+                      lineHeight: 1.6,
+                      maxWidth: '520px',
+                      margin: '0 auto var(--space-6) auto'
+                    }}
+                  >
+                    We were unable to locate pieces for the "{activeCategory}" atelier archive on the server. The collection may be undergoing seasonal rotation or has been temporarily moved.
+                  </p>
+
+                  <div 
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '8px',
+                      padding: '6px 14px',
+                      backgroundColor: 'rgba(20,20,20,0.04)',
+                      border: '1px solid rgba(20,20,20,0.08)',
+                      borderRadius: '20px',
+                      fontSize: '11px',
+                      fontFamily: 'monospace',
+                      color: 'var(--color-stone)',
+                      marginBottom: 'var(--space-6)'
+                    }}
+                  >
+                    <span>HTTP_STATUS:</span>
+                    <span style={{ color: '#8C4A5A', fontWeight: 600 }}>404 NOT_FOUND</span>
+                    <span style={{ color: 'rgba(0,0,0,0.3)' }}>|</span>
+                    <span>REF: VST-404-{activeCategory ? activeCategory.toUpperCase() : 'COLL'}</span>
+                  </div>
+
+                  <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center' }}>
+                    <button 
+                      onClick={() => { setSearchQuery(''); setPriceRange(100000); setSearchParams({ category: 'All' }); }}
+                      style={{ 
+                        padding: '12px 28px', 
+                        backgroundColor: 'var(--color-ink)', 
+                        color: 'var(--color-white)', 
+                        border: '1px solid var(--color-ink)', 
+                        cursor: 'pointer',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.12em',
+                        fontSize: '12px',
+                        fontWeight: 600
+                      }}
+                    >
+                      View All Pieces
+                    </button>
+
+                    <Link
+                      to="/"
+                      style={{ 
+                        padding: '12px 28px', 
+                        backgroundColor: 'transparent', 
+                        color: 'var(--color-ink)', 
+                        border: '1px solid var(--color-ink)', 
+                        textDecoration: 'none',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.12em',
+                        fontSize: '12px',
+                        fontWeight: 600
+                      }}
+                    >
+                      Return to Home
+                    </Link>
+                  </div>
+                </motion.div>
+              ) : filteredProducts.length > 0 ? (
                 <div className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-5 lg:grid-cols-4 lg:gap-6 min-w-0 w-full">
                   {filteredProducts.map((product, idx) => (
                     <ProductCard 
