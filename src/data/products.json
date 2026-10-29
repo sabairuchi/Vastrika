@@ -1,0 +1,1913 @@
+[
+  {
+    "id": "leh-01",
+    "name": "Dusty Rose Shimmer Mermaid Lehenga",
+    "department": "Women",
+    "type": "Lehenga",
+    "price": 10000,
+    "tags": [
+      "new",
+      "bestseller",
+      "sale"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Lehenga crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 10,
+    "stock": 10,
+    "imageQuery": "Lehenga",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/f_auto,q_auto,h_600/v1791704695/lehngar.png"
+    ],
+    "demo": true,
+    "originalPrice": 16667,
+    "addedAt": "2026-10-10T08:00:00.000Z"
+  },
+  {
+    "id": "leh-02",
+    "name": "Black Embellished Mermaid Lehenga with Cape",
+    "department": "Women",
+    "type": "Lehenga",
+    "price": 11000,
+    "tags": [
+      "new",
+      "sale"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Lehenga crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 11,
+    "stock": 10,
+    "imageQuery": "Lehenga",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791351632/lehnga_2.jpg"
+    ],
+    "demo": true,
+    "originalPrice": 14667,
+    "addedAt": "2026-10-09T08:00:00.000Z"
+  },
+  {
+    "id": "leh-03",
+    "name": "Navy Blue Mermaid Lehenga with Cape",
+    "department": "Women",
+    "type": "Lehenga",
+    "price": 12000,
+    "tags": [
+      "new",
+      "sale"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Lehenga crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 12,
+    "stock": 10,
+    "imageQuery": "Lehenga",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791351631/lehnga_3.jpg"
+    ],
+    "demo": true,
+    "originalPrice": 16000,
+    "addedAt": "2026-10-08T08:00:00.000Z"
+  },
+  {
+    "id": "leh-04",
+    "name": "Ice Blue Off-Shoulder Ruffled Lehenga",
+    "department": "Women",
+    "type": "Lehenga",
+    "price": 13000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Lehenga crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 13,
+    "stock": 10,
+    "imageQuery": "Lehenga",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791351631/lehnga_4.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-07T08:00:00.000Z"
+  },
+  {
+    "id": "leh-05",
+    "name": "Blush Pink Embellished Ruffled Lehenga",
+    "department": "Women",
+    "type": "Lehenga",
+    "price": 14000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Lehenga crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 14,
+    "stock": 10,
+    "imageQuery": "Lehenga",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791351631/lehnga_5.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-06T08:00:00.000Z"
+  },
+  {
+    "id": "leh-06",
+    "name": "Midnight Blue Sparkly Ruffled Lehenga",
+    "department": "Women",
+    "type": "Lehenga",
+    "price": 15000,
+    "tags": [
+      "new",
+      "bestseller"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Lehenga crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 15,
+    "stock": 10,
+    "imageQuery": "Lehenga",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/f_auto,q_auto,h_600/v1791704699/fish_1.png"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-05T08:00:00.000Z"
+  },
+  {
+    "id": "leh-07",
+    "name": "Chocolate Brown Tiered Lehenga with Pearl Sleeve",
+    "department": "Women",
+    "type": "Lehenga",
+    "price": 16000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Lehenga crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 16,
+    "stock": 10,
+    "imageQuery": "Lehenga",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791351631/lehnga_7.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-04T08:00:00.000Z"
+  },
+  {
+    "id": "leh-08",
+    "name": "Vibrant Red Ruffled Draped Gown",
+    "department": "Women",
+    "type": "Lehenga",
+    "price": 17000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Lehenga crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 17,
+    "stock": 10,
+    "imageQuery": "Lehenga",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791351651/lehnga_8_-_Copy.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-03T08:00:00.000Z"
+  },
+  {
+    "id": "leh-09",
+    "name": "Deep Maroon Ruffled Draped Lehenga Gown",
+    "department": "Women",
+    "type": "Lehenga",
+    "price": 18000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Lehenga crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 18,
+    "stock": 10,
+    "imageQuery": "Lehenga",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791351651/lehnga_9_-_Copy.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-02T08:00:00.000Z"
+  },
+  {
+    "id": "leh-10",
+    "name": "Pastel 3D Floral Applique Ivory Lehenga",
+    "department": "Women",
+    "type": "Lehenga",
+    "price": 19000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Lehenga crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 19,
+    "stock": 10,
+    "imageQuery": "Lehenga",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/f_auto/q_auto/l3.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-01T08:00:00.000Z"
+  },
+  {
+    "id": "leh-11",
+    "name": "Ombre Red & Cream Heavily Embroidered Lehenga",
+    "department": "Women",
+    "type": "Lehenga",
+    "price": 20000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Lehenga crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 20,
+    "stock": 10,
+    "imageQuery": "Lehenga",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/f_auto/q_auto/l2.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-09-30T08:00:00.000Z"
+  },
+  {
+    "id": "leh-12",
+    "name": "Ombre Pink & White Floral Embroidered Lehenga",
+    "department": "Women",
+    "type": "Lehenga",
+    "price": 21000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Lehenga crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 21,
+    "stock": 10,
+    "imageQuery": "Lehenga",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/f_auto/q_auto/l1.png"
+    ],
+    "demo": true,
+    "addedAt": "2026-09-29T08:00:00.000Z"
+  },
+  {
+    "id": "shw-01",
+    "name": "Majestic Rose Gold Embroidered Sherwani",
+    "department": "Men",
+    "type": "Sherwani",
+    "price": 10000,
+    "tags": [
+      "new",
+      "bestseller",
+      "sale"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Sherwani crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 10,
+    "stock": 10,
+    "imageQuery": "Sherwani",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/f_auto,q_auto,h_600/v1791704696/sher.png"
+    ],
+    "demo": true,
+    "originalPrice": 13333,
+    "addedAt": "2026-10-10T08:00:00.000Z"
+  },
+  {
+    "id": "shw-02",
+    "name": "Light Beige Intricate Threadwork Sherwani",
+    "department": "Men",
+    "type": "Sherwani",
+    "price": 11000,
+    "tags": [
+      "new",
+      "sale"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Sherwani crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 11,
+    "stock": 10,
+    "imageQuery": "Sherwani",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791436016/sherwani_9.jpg"
+    ],
+    "demo": true,
+    "originalPrice": 14667,
+    "addedAt": "2026-10-09T08:00:00.000Z"
+  },
+  {
+    "id": "shw-03",
+    "name": "Textured Ivory Sequin Sherwani",
+    "department": "Men",
+    "type": "Sherwani",
+    "price": 12000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Sherwani crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 12,
+    "stock": 10,
+    "imageQuery": "Sherwani",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791436017/sherwani_13.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-08T08:00:00.000Z"
+  },
+  {
+    "id": "shw-04",
+    "name": "Silver Embellished White Sherwani",
+    "department": "Men",
+    "type": "Sherwani",
+    "price": 13000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Sherwani crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 13,
+    "stock": 10,
+    "imageQuery": "Sherwani",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791436016/sherwani_8.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-07T08:00:00.000Z"
+  },
+  {
+    "id": "shw-05",
+    "name": "Sophisticated Ash Grey Embroidered Sherwani",
+    "department": "Men",
+    "type": "Sherwani",
+    "price": 14000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Sherwani crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 14,
+    "stock": 10,
+    "imageQuery": "Sherwani",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791436016/sherwani_12.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-06T08:00:00.000Z"
+  },
+  {
+    "id": "shw-06",
+    "name": "Classic Pure White Silk Sherwani",
+    "department": "Men",
+    "type": "Sherwani",
+    "price": 15000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Sherwani crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 15,
+    "stock": 10,
+    "imageQuery": "Sherwani",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791436016/sherwani_15.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-05T08:00:00.000Z"
+  },
+  {
+    "id": "shw-07",
+    "name": "Opulent Cream & Gold Embellished Sherwani",
+    "department": "Men",
+    "type": "Sherwani",
+    "price": 16000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Sherwani crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 16,
+    "stock": 10,
+    "imageQuery": "Sherwani",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791436016/sherwani_10.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-04T08:00:00.000Z"
+  },
+  {
+    "id": "shw-08",
+    "name": "Off-White Shoulder Embroidered Sherwani",
+    "department": "Men",
+    "type": "Sherwani",
+    "price": 17000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Sherwani crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 17,
+    "stock": 10,
+    "imageQuery": "Sherwani",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791436016/sherwani_14.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-03T08:00:00.000Z"
+  },
+  {
+    "id": "shw-09",
+    "name": "Pristine White Floral Embroidered Sherwani",
+    "department": "Men",
+    "type": "Sherwani",
+    "price": 18000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Sherwani crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 18,
+    "stock": 10,
+    "imageQuery": "Sherwani",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791436959/shervani_3.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-02T08:00:00.000Z"
+  },
+  {
+    "id": "shw-10",
+    "name": "Regal Gold & Crimson Velvet Sherwani",
+    "department": "Men",
+    "type": "Sherwani",
+    "price": 19000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Sherwani crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 19,
+    "stock": 10,
+    "imageQuery": "Sherwani",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791436959/shervani_6.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-01T08:00:00.000Z"
+  },
+  {
+    "id": "shw-11",
+    "name": "Ivory Pearl Embellished Sherwani Set",
+    "department": "Men",
+    "type": "Sherwani",
+    "price": 20000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Sherwani crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 20,
+    "stock": 10,
+    "imageQuery": "Sherwani",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791436959/shervani_5.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-09-30T08:00:00.000Z"
+  },
+  {
+    "id": "shw-12",
+    "name": "Royal Maroon Velvet Embroidered Sherwani",
+    "department": "Men",
+    "type": "Sherwani",
+    "price": 21000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Sherwani crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 21,
+    "stock": 10,
+    "imageQuery": "Sherwani",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791436959/shervani_2.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-09-29T08:00:00.000Z"
+  },
+  {
+    "id": "sar-01",
+    "name": "Olive Green Silk Saree with Black Border",
+    "department": "Women",
+    "type": "Saree",
+    "price": 10000,
+    "tags": [
+      "new",
+      "bestseller",
+      "sale"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Saree crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 10,
+    "stock": 10,
+    "imageQuery": "Saree",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/f_auto,q_auto,h_600/v1791704710/sareeset.png"
+    ],
+    "demo": true,
+    "originalPrice": 15385,
+    "addedAt": "2026-10-10T08:00:00.000Z"
+  },
+  {
+    "id": "sar-02",
+    "name": "Rust Orange Ombre Satin Saree",
+    "department": "Women",
+    "type": "Saree",
+    "price": 11000,
+    "tags": [
+      "new",
+      "sale"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Saree crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 11,
+    "stock": 10,
+    "imageQuery": "Saree",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791438162/saree_2.jpg"
+    ],
+    "demo": true,
+    "originalPrice": 14667,
+    "addedAt": "2026-10-09T08:00:00.000Z"
+  },
+  {
+    "id": "sar-03",
+    "name": "Rose Gold Shimmer Tissue Saree",
+    "department": "Women",
+    "type": "Saree",
+    "price": 12000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Saree crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 12,
+    "stock": 10,
+    "imageQuery": "Saree",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791438162/saree_4.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-08T08:00:00.000Z"
+  },
+  {
+    "id": "sar-04",
+    "name": "Maroon Brocade Silk Saree",
+    "department": "Women",
+    "type": "Saree",
+    "price": 13000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Saree crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 13,
+    "stock": 10,
+    "imageQuery": "Saree",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791438162/saree_3.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-07T08:00:00.000Z"
+  },
+  {
+    "id": "sar-05",
+    "name": "Soft Pink Embroidered Net Saree",
+    "department": "Women",
+    "type": "Saree",
+    "price": 14000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Saree crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 14,
+    "stock": 10,
+    "imageQuery": "Saree",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791438162/saree_5.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-06T08:00:00.000Z"
+  },
+  {
+    "id": "sar-06",
+    "name": "Black Floral Printed Organza Saree",
+    "department": "Women",
+    "type": "Saree",
+    "price": 15000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Saree crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 15,
+    "stock": 10,
+    "imageQuery": "Saree",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791438162/saree_6.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-05T08:00:00.000Z"
+  },
+  {
+    "id": "sar-07",
+    "name": "Ice Blue Pearl Embellished Net Saree",
+    "department": "Women",
+    "type": "Saree",
+    "price": 16000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Saree crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 16,
+    "stock": 10,
+    "imageQuery": "Saree",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791438161/saree_8.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-04T08:00:00.000Z"
+  },
+  {
+    "id": "sar-08",
+    "name": "Ivory Floral Embroidered Net Saree",
+    "department": "Women",
+    "type": "Saree",
+    "price": 17000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Saree crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 17,
+    "stock": 10,
+    "imageQuery": "Saree",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791438161/saree_7.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-03T08:00:00.000Z"
+  },
+  {
+    "id": "sar-09",
+    "name": "Blush Pink Sequin Net Saree",
+    "department": "Women",
+    "type": "Saree",
+    "price": 18000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Saree crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 18,
+    "stock": 10,
+    "imageQuery": "Saree",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791438161/saree_9.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-02T08:00:00.000Z"
+  },
+  {
+    "id": "sar-10",
+    "name": "Midnight Black Crepe Saree",
+    "department": "Women",
+    "type": "Saree",
+    "price": 19000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Saree crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 19,
+    "stock": 10,
+    "imageQuery": "Saree",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/f_auto/q_auto/sarees1.png"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-01T08:00:00.000Z"
+  },
+  {
+    "id": "sar-11",
+    "name": "Classic Gold & Maroon Silk Saree",
+    "department": "Women",
+    "type": "Saree",
+    "price": 20000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Saree crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 20,
+    "stock": 10,
+    "imageQuery": "Saree",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/f_auto/q_auto/sarees3.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-09-30T08:00:00.000Z"
+  },
+  {
+    "id": "sar-12",
+    "name": "Metallic Bronze Silk Saree",
+    "department": "Women",
+    "type": "Saree",
+    "price": 21000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Saree crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 21,
+    "stock": 10,
+    "imageQuery": "Saree",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/f_auto/q_auto/sarees2.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-09-29T08:00:00.000Z"
+  },
+  {
+    "id": "acc-01",
+    "name": "Black Suede Embellished Pumps",
+    "department": "Accessories",
+    "type": "Accessories",
+    "price": 10000,
+    "tags": [
+      "new",
+      "sale"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "Free Size"
+    ],
+    "description": "Beautiful Accessories crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 10,
+    "stock": 10,
+    "imageQuery": "Accessories",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791438719/Accessories_17_-_Copy.jpg"
+    ],
+    "demo": true,
+    "originalPrice": 13333,
+    "addedAt": "2026-10-10T08:00:00.000Z"
+  },
+  {
+    "id": "acc-02",
+    "name": "Cream Leather Ankle Boots",
+    "department": "Accessories",
+    "type": "Accessories",
+    "price": 11000,
+    "tags": [
+      "new",
+      "sale"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "Free Size"
+    ],
+    "description": "Beautiful Accessories crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 11,
+    "stock": 10,
+    "imageQuery": "Accessories",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791438718/Accessories_19_-_Copy.jpg"
+    ],
+    "demo": true,
+    "originalPrice": 14667,
+    "addedAt": "2026-10-09T08:00:00.000Z"
+  },
+  {
+    "id": "acc-03",
+    "name": "Burgundy Leather Ankle Boots",
+    "department": "Accessories",
+    "type": "Accessories",
+    "price": 12000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "Free Size"
+    ],
+    "description": "Beautiful Accessories crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 12,
+    "stock": 10,
+    "imageQuery": "Accessories",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791438718/Accessories_20_-_Copy.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-08T08:00:00.000Z"
+  },
+  {
+    "id": "acc-04",
+    "name": "Classic Black Red-Soled Stilettos",
+    "department": "Accessories",
+    "type": "Accessories",
+    "price": 13000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "Free Size"
+    ],
+    "description": "Beautiful Accessories crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 13,
+    "stock": 10,
+    "imageQuery": "Accessories",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791438719/Accessories_17_-_Copy.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-07T08:00:00.000Z"
+  },
+  {
+    "id": "acc-05",
+    "name": "Rose Gold & Silver Solitaire Ring",
+    "department": "Accessories",
+    "type": "Accessories",
+    "price": 14000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "Free Size"
+    ],
+    "description": "Beautiful Accessories crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 14,
+    "stock": 10,
+    "imageQuery": "Accessories",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791438748/Accessories_7_-_Copy.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-06T08:00:00.000Z"
+  },
+  {
+    "id": "acc-06",
+    "name": "Sleek Grey Stiletto Heels",
+    "department": "Accessories",
+    "type": "Accessories",
+    "price": 15000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "Free Size"
+    ],
+    "description": "Beautiful Accessories crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 15,
+    "stock": 10,
+    "imageQuery": "Accessories",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791438748/Accessories_23_-_Copy.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-05T08:00:00.000Z"
+  },
+  {
+    "id": "acc-07",
+    "name": "Vintage Gold Diamond Pendant Necklace",
+    "department": "Accessories",
+    "type": "Accessories",
+    "price": 16000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "Free Size"
+    ],
+    "description": "Beautiful Accessories crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 16,
+    "stock": 10,
+    "imageQuery": "Accessories",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791438749/Accessories_4_-_Copy.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-04T08:00:00.000Z"
+  },
+  {
+    "id": "acc-08",
+    "name": "Matching Gold Engagement Ring Set",
+    "department": "Accessories",
+    "type": "Accessories",
+    "price": 17000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "Free Size"
+    ],
+    "description": "Beautiful Accessories crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 17,
+    "stock": 10,
+    "imageQuery": "Accessories",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791438749/Accessories_6_-_Copy.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-03T08:00:00.000Z"
+  },
+  {
+    "id": "acc-09",
+    "name": "Aquamarine & Diamond Necklace Set",
+    "department": "Accessories",
+    "type": "Accessories",
+    "price": 18000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "Free Size"
+    ],
+    "description": "Beautiful Accessories crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 18,
+    "stock": 10,
+    "imageQuery": "Accessories",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/f_auto/q_auto/Accessories_9.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-02T08:00:00.000Z"
+  },
+  {
+    "id": "acc-10",
+    "name": "Gold Leaf Diamond Pendant Necklace",
+    "department": "Accessories",
+    "type": "Accessories",
+    "price": 19000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "Free Size"
+    ],
+    "description": "Beautiful Accessories crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 19,
+    "stock": 10,
+    "imageQuery": "Accessories",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/f_auto/q_auto/Accessories_4.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-01T08:00:00.000Z"
+  },
+  {
+    "id": "acc-11",
+    "name": "Heavy Gold Link Men's Bracelet",
+    "department": "Accessories",
+    "type": "Accessories",
+    "price": 20000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "Free Size"
+    ],
+    "description": "Beautiful Accessories crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 20,
+    "stock": 10,
+    "imageQuery": "Accessories",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/f_auto/q_auto/Accessories_5.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-09-30T08:00:00.000Z"
+  },
+  {
+    "id": "acc-12",
+    "name": "Contemporary Diamond & Gold Necklace Set",
+    "department": "Accessories",
+    "type": "Accessories",
+    "price": 21000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "Free Size"
+    ],
+    "description": "Beautiful Accessories crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 21,
+    "stock": 10,
+    "imageQuery": "Accessories",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/f_auto/q_auto/Accessories_3.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-09-29T08:00:00.000Z"
+  },
+  {
+    "id": "kur-01",
+    "name": "Ochre Yellow Embroidered Kurta Set",
+    "department": "Men",
+    "type": "Kurta",
+    "price": 10000,
+    "tags": [
+      "new",
+      "bestseller",
+      "sale"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Kurta crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 10,
+    "stock": 10,
+    "imageQuery": "Kurta",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/f_auto,q_auto,h_600/v1791704697/kurtaset.png"
+    ],
+    "demo": true,
+    "originalPrice": 14286,
+    "addedAt": "2026-10-10T08:00:00.000Z"
+  },
+  {
+    "id": "kur-02",
+    "name": "Emerald Green Embroidered Kurta Suit",
+    "department": "Men",
+    "type": "Kurta",
+    "price": 11000,
+    "tags": [
+      "new",
+      "sale"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Kurta crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 11,
+    "stock": 10,
+    "imageQuery": "Kurta",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791437677/emerald_silk.jpg"
+    ],
+    "demo": true,
+    "originalPrice": 14667,
+    "addedAt": "2026-10-09T08:00:00.000Z"
+  },
+  {
+    "id": "kur-03",
+    "name": "Soft Pink Floral Kurta Suit",
+    "department": "Men",
+    "type": "Kurta",
+    "price": 12000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Kurta crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 12,
+    "stock": 10,
+    "imageQuery": "Kurta",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791437677/dusty_rose.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-08T08:00:00.000Z"
+  },
+  {
+    "id": "kur-04",
+    "name": "Navy Blue Chikankari Men's Kurta",
+    "department": "Men",
+    "type": "Kurta",
+    "price": 13000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Kurta crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 13,
+    "stock": 10,
+    "imageQuery": "Kurta",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791437676/mens_blue_kurta.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-07T08:00:00.000Z"
+  },
+  {
+    "id": "kur-05",
+    "name": "Classic White Chikankari Men's Kurta",
+    "department": "Men",
+    "type": "Kurta",
+    "price": 14000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Kurta crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 14,
+    "stock": 10,
+    "imageQuery": "Kurta",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791437676/men_white_chikankari.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-06T08:00:00.000Z"
+  },
+  {
+    "id": "kur-06",
+    "name": "White & Blue Floral Printed Short Kurta",
+    "department": "Men",
+    "type": "Kurta",
+    "price": 15000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Kurta crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 15,
+    "stock": 10,
+    "imageQuery": "Kurta",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791437676/white.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-05T08:00:00.000Z"
+  },
+  {
+    "id": "kur-07",
+    "name": "Pastel Pink Mirror Work Men's Kurta",
+    "department": "Men",
+    "type": "Kurta",
+    "price": 16000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Kurta crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 16,
+    "stock": 10,
+    "imageQuery": "Kurta",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791437676/men_rose_kurta.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-04T08:00:00.000Z"
+  },
+  {
+    "id": "kur-08",
+    "name": "Navy Blue Embroidered Kurta Suit",
+    "department": "Men",
+    "type": "Kurta",
+    "price": 17000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Kurta crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 17,
+    "stock": 10,
+    "imageQuery": "Kurta",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791437676/blue_kurta.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-03T08:00:00.000Z"
+  },
+  {
+    "id": "kur-09",
+    "name": "Vibrant Mustard Printed Kurta",
+    "department": "Men",
+    "type": "Kurta",
+    "price": 18000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Kurta crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 18,
+    "stock": 10,
+    "imageQuery": "Kurta",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/v1791437676/musterd_kurta.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-02T08:00:00.000Z"
+  },
+  {
+    "id": "kur-10",
+    "name": "Pastel Mint Asymmetric Kurta Set",
+    "department": "Men",
+    "type": "Kurta",
+    "price": 19000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Kurta crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 19,
+    "stock": 10,
+    "imageQuery": "Kurta",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/f_auto/q_auto/k1"
+    ],
+    "demo": true,
+    "addedAt": "2026-10-01T08:00:00.000Z"
+  },
+  {
+    "id": "kur-11",
+    "name": "Classic White Dhoti Kurta",
+    "department": "Men",
+    "type": "Kurta",
+    "price": 20000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Kurta crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 20,
+    "stock": 10,
+    "imageQuery": "Kurta",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/f_auto/q_auto/k2.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-09-30T08:00:00.000Z"
+  },
+  {
+    "id": "kur-12",
+    "name": "Ivory Embroidered Kurta Set",
+    "department": "Men",
+    "type": "Kurta",
+    "price": 21000,
+    "tags": [
+      "new"
+    ],
+    "fabric": "Premium",
+    "work": "Handcrafted",
+    "colors": [
+      "Multicolor"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "Beautiful Kurta crafted with care.",
+    "deliveryNote": "Ships in 1-2 weeks",
+    "rating": 4.8,
+    "reviews": 21,
+    "stock": 10,
+    "imageQuery": "Kurta",
+    "images": [
+      "https://res.cloudinary.com/snuwehqj/image/upload/f_auto/q_auto/k3.jpg"
+    ],
+    "demo": true,
+    "addedAt": "2026-09-29T08:00:00.000Z"
+  }
+]

@@ -1,0 +1,15 @@
+import React from 'react';
+
+const Logo = () => {
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+      <img 
+        src="/vastrika-logo.jpg" 
+        alt="VASTRIKA Logo" 
+        style={{ height: '60px', objectFit: 'contain', mixBlendMode: 'multiply' }} 
+      />
+    </div>
+  );
+};
+
+export default Logo;
