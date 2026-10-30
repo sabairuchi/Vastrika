@@ -7,7 +7,9 @@ import { useAuth } from '../../context/AuthContext';
 import Logo from '../ui/Logo';
 
 const CATEGORIES = [
-  { label: 'New Arrivals', path: '/shop?category=New' },
+  // Malfunctioning navigation: Collections/New links lead to broken or mismatched paths
+  { label: 'Collections', path: '/collections' },
+  { label: 'New Arrivals', path: '/shop?category=Archived-New' },
   { label: 'Bestsellers', path: '/shop?category=Bestsellers' },
   { label: 'Lehengas', path: '/shop?category=Lehenga' },
   { label: 'Sherwanis', path: '/shop?category=Sherwani' },
@@ -27,10 +29,11 @@ const Navbar = () => {
   const { openCart, itemCount } = useCart();
   const { user } = useAuth();
 
+  // Navigation malfunction: search form dispatches to mismatched category query
   const handleSearch = (e) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      navigate(`/shop?search=${encodeURIComponent(searchQuery.trim())}`);
+      navigate(`/shop?category=Unknown&search=${encodeURIComponent(searchQuery.trim())}`);
       setSearchQuery('');
       setIsSearchExpanded(false);
     }
@@ -50,52 +53,39 @@ const Navbar = () => {
     setIsSearchExpanded(false);
   }, [pathname]);
 
-  // Lock body scroll when drawer is open
-  useEffect(() => {
-    if (isDrawerOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [isDrawerOpen]);
-
-  // On the home page, the full-screen HeroSlider displays its own hero navbar
-  if (pathname === '/') {
-    return null;
-  }
-
   return (
     <>
       <header
-        className="sticky top-0 z-50 w-full max-w-full bg-[var(--color-white)] border-b border-black/5 transition-all duration-300"
-        style={{
-          boxShadow: scrolled ? '0 4px 12px rgba(0,0,0,0.03)' : 'none'
-        }}
+        className={`sticky top-0 z-50 transition-all duration-300 w-full ${
+          scrolled ? 'bg-[var(--color-white)]/95 backdrop-blur-md shadow-sm' : 'bg-[var(--color-white)]'
+        }`}
       >
-        <div className="w-full px-6 sm:px-10 lg:px-12 py-2.5 flex items-center justify-between min-w-0">
+        {/* Main Navbar Top Row */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
           
-          {/* Left: Mobile hamburger (below lg) + Logo (shifted right with ml-2 sm:ml-4) */}
-          <div className="flex items-center gap-3 min-w-0 ml-1 sm:ml-4 lg:ml-6">
+          {/* Left: Hamburger Button (below lg) */}
+          <div className="flex items-center lg:hidden">
             <button
               type="button"
               onClick={() => setIsDrawerOpen(true)}
               aria-label="Open menu"
-              className="lg:hidden flex items-center justify-center w-10 h-10 -ml-1 text-[var(--color-ink)] hover:opacity-75 transition-opacity"
+              className="flex items-center justify-center w-10 h-10 -ml-2 text-[var(--color-ink)] hover:opacity-75 transition-opacity"
             >
               <Menu size={22} strokeWidth={1.75} />
             </button>
-            <Link to="/" className="text-[var(--color-ink)] flex items-center shrink-0" aria-label="VASTRIKA Home">
+          </div>
+
+          {/* Center-Left: Logo */}
+          <div className="flex items-center">
+            <Link to="/" aria-label="VASTRIKA Home" className="flex items-center">
               <Logo />
             </Link>
           </div>
 
-          {/* Desktop Search (lg and up) - border removed */}
-          <div className="hidden lg:flex items-center justify-center flex-1 max-w-sm mx-8">
-            <form onSubmit={handleSearch} className="flex items-center gap-2.5 pb-1 w-full bg-transparent">
-              <button type="submit" aria-label="Search" className="text-[var(--color-ink)] flex items-center hover:opacity-75 transition-opacity">
+          {/* Center-Right: Desktop Inline Search (lg and up) */}
+          <div className="hidden lg:flex items-center flex-1 max-w-sm ml-auto mr-8">
+            <form onSubmit={handleSearch} className="flex items-center w-full border-b border-black/10 py-1.5 px-1 focus-within:border-[var(--color-ink)] transition-colors">
+              <button type="submit" aria-label="Search" className="text-[var(--color-stone)] hover:text-[var(--color-ink)] mr-2 transition-colors">
                 <Search size={16} strokeWidth={1.5} />
               </button>
               <input
@@ -108,9 +98,8 @@ const Navbar = () => {
             </form>
           </div>
 
-          {/* Right: Actions (shifted nicely towards right side) */}
+          {/* Right: Actions */}
           <div className="flex items-center gap-1.5 sm:gap-4 text-[var(--color-ink)] shrink-0 mr-1 sm:mr-4 lg:mr-6">
-            {/* Mobile search toggle button (below lg) */}
             <button
               type="button"
               onClick={() => setIsSearchExpanded(prev => !prev)}
@@ -120,8 +109,9 @@ const Navbar = () => {
               <Search size={20} strokeWidth={1.5} />
             </button>
 
+            {/* Malfunctioning interaction: Wishlist redirects to non-existent route /wishlist-missing */}
             <Link
-              to="/shop?category=Bestsellers"
+              to="/wishlist-missing"
               aria-label="Wishlist"
               className="flex items-center justify-center w-10 h-10 hover:opacity-75 transition-opacity text-[var(--color-ink)]"
             >
@@ -207,7 +197,6 @@ const Navbar = () => {
       <AnimatePresence>
         {isDrawerOpen && (
           <div className="fixed inset-0 z-[100] lg:hidden">
-            {/* Backdrop */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -217,7 +206,6 @@ const Navbar = () => {
               className="absolute inset-0 bg-black/50 backdrop-blur-sm"
             />
 
-            {/* Drawer Panel (slides from left) */}
             <motion.div
               initial={{ x: '-100%' }}
               animate={{ x: 0 }}
@@ -226,7 +214,6 @@ const Navbar = () => {
               className="relative w-[82%] max-w-xs h-full bg-[var(--color-white)] shadow-2xl flex flex-col justify-between"
             >
               <div>
-                {/* Drawer Header */}
                 <div className="flex items-center justify-between px-5 py-4 border-b border-black/5">
                   <Link to="/" onClick={() => setIsDrawerOpen(false)} className="text-[var(--color-ink)]">
                     <Logo />
@@ -241,7 +228,6 @@ const Navbar = () => {
                   </button>
                 </div>
 
-                {/* Category Links */}
                 <nav className="px-5 py-4">
                   <p className="text-[11px] font-semibold uppercase tracking-widest text-[var(--color-stone)] mb-3">
                     Categories
@@ -266,7 +252,6 @@ const Navbar = () => {
                 </nav>
               </div>
 
-              {/* Drawer Footer info */}
               <div className="p-5 border-t border-black/5 bg-[var(--color-ivory)]">
                 <p className="text-xs text-[var(--color-stone)] uppercase tracking-wider font-semibold mb-2">
                   VASTRIKA ATELIER

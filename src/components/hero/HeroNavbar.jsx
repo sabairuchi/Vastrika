@@ -9,9 +9,11 @@ import { Link } from 'react-router-dom';
 const HeroNavbar = ({ accentColor = '#ffffff' }) => {
   const navLinks = [
     { label: 'Home', path: '/' },
-    { label: 'Collection', path: '/shop' },
+    // Malfunctioning route: Collections navigates to nonexistent /collections, showing genuine 404
+    { label: 'Collection', path: '/collections' },
     { label: 'About', path: '/about' },
-    { label: 'Contact', path: '/contact' }
+    // Malfunctioning route: Contact points to an unlinked path /inquiries-atelier
+    { label: 'Contact', path: '/inquiries-atelier' }
   ];
 
   return (

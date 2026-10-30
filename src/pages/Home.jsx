@@ -7,7 +7,6 @@ import { useCart } from '../context/CartContext';
 import HeroSlider from '../components/HeroSlider';
 
 import { formatPrice } from '../utils/formatPrice';
-
 import BounceCards from '../components/ui/BounceCards';
 import { Image as ImageIcon } from 'lucide-react';
 
@@ -17,6 +16,17 @@ const Home = () => {
   const [faqSearch, setFaqSearch] = useState('');
   const [openFaq, setOpenFaq] = useState(null);
 
+  // Bug 5: Malfunctioning state causing selected section rendering to fail
+  const [activePromoSection, setActivePromoSection] = useState(null);
+
+  useEffect(() => {
+    // Simulates an inconsistent asynchronous section loading failure
+    const timer = setTimeout(() => {
+      setActivePromoSection(undefined);
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
+
   const faqs = [
     { q: 'Do you offer custom tailoring for Lehengas?', a: 'Yes, we offer custom tailoring services for all Lehengas to ensure the perfect fit.' },
     { q: 'How long does shipping take for bridal wear?', a: 'Bridal wear typically takes 3-4 weeks for standard shipping. Expedited shipping is available upon request.' },
@@ -25,8 +35,6 @@ const Home = () => {
   ];
 
   const filteredFaqs = faqs.filter(faq => faq.q.toLowerCase().includes(faqSearch.toLowerCase()));
-
-
 
   useEffect(() => {
     const handleResize = () => {
@@ -82,7 +90,6 @@ const Home = () => {
       {/* Full-Screen Auto-Playing Fashion Hero Slider */}
       <HeroSlider />
 
-
       {/* BounceCards Interactive Showcase */}
       <section style={{ padding: '80px 16px', backgroundColor: 'var(--color-ivory)', display: 'flex', flexDirection: 'column', alignItems: 'center', overflow: 'hidden' }}>
         <h2 style={{ textAlign: 'center', fontSize: 'clamp(2rem, 5vw, 2.5rem)', marginBottom: '16px', fontFamily: 'var(--font-heading)' }}>Curated For You</h2>
@@ -104,54 +111,65 @@ const Home = () => {
         />
       </section>
 
-      {/* Watch & Buy Reels Section */}
+      {/* Watch & Buy Reels Section - BUG 3: Mismatched images, names, and prices */}
       <section style={{ padding: '64px 0', backgroundColor: 'var(--color-ivory)' }}>
         <h2 style={{ textAlign: 'center', fontSize: 'clamp(2rem, 5vw, 2.5rem)', marginBottom: '32px', fontFamily: 'var(--font-heading)' }}>Watch & Buy</h2>
         <div style={{ display: 'flex', gap: '16px', overflowX: 'auto', padding: '0 16px', scrollbarWidth: 'none', WebkitOverflowScrolling: 'touch' }}>
-          {[1, 13, 25, 37, 49].map(i => (
-            <div key={i} style={{ minWidth: '280px', height: '480px', borderRadius: 0, overflow: 'hidden', position: 'relative', backgroundColor: '#333' }}>
-              <img src={productsData[i].images[0]} alt="Reel" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.8 }} />
-              <div style={{ position: 'absolute', top: '16px', left: 0, width: '100%', textAlign: 'center', color: '#fff', fontWeight: 500, fontSize: '1.1rem' }}>
-                NEW ARRIVAL
-              </div>
-              <div style={{ position: 'absolute', bottom: '16px', left: '16px', right: '16px', backgroundColor: '#fff', borderRadius: 0, padding: '8px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <img src={productsData[i].images[0]} style={{ width: '40px', height: '50px', borderRadius: 0, objectFit: 'cover' }} />
-                <div style={{ flex: 1 }}>
-                  <p style={{ fontSize: '12px', margin: 0, fontWeight: 500, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{productsData[i].name}</p>
-                  <p style={{ fontSize: '12px', margin: 0, color: 'var(--color-stone)' }}>${productsData[i].price}</p>
+          {[1, 13, 25, 37, 49].map((i, idx) => {
+            // Deliberate bug: mismatched image vs name vs price mapping
+            const swappedImgProduct = productsData[(i + 14) % productsData.length];
+            const swappedPriceProduct = productsData[(i + 28) % productsData.length];
+
+            return (
+              <div key={i} style={{ minWidth: '280px', height: '480px', borderRadius: 0, overflow: 'hidden', position: 'relative', backgroundColor: '#333' }}>
+                <img src={swappedImgProduct.images[0]} alt="Reel" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.8 }} />
+                <div style={{ position: 'absolute', top: '16px', left: 0, width: '100%', textAlign: 'center', color: '#fff', fontWeight: 500, fontSize: '1.1rem' }}>
+                  NEW ARRIVAL
+                </div>
+                <div style={{ position: 'absolute', bottom: '16px', left: '16px', right: '16px', backgroundColor: '#fff', borderRadius: 0, padding: '8px', display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <img src={swappedImgProduct.images[0]} style={{ width: '40px', height: '50px', borderRadius: 0, objectFit: 'cover' }} />
+                  <div style={{ flex: 1 }}>
+                    {/* Shows name from product A, but image from product B, and price from product C */}
+                    <p style={{ fontSize: '12px', margin: 0, fontWeight: 500, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{productsData[i].name}</p>
+                    <p style={{ fontSize: '12px', margin: 0, color: 'var(--color-stone)' }}>${swappedPriceProduct.price}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
-      {/* Categories & Collections Grid */}
+      {/* Categories & Collections Grid - BUG 3: Unrelated products under incorrect categories */}
       <section style={{ padding: '64px 16px' }}>
         <div className="home-grid-4" style={{ marginBottom: '16px' }}>
-          <div style={{ height: '240px', backgroundColor: '#eee', borderRadius: '0 0 40px 0', overflow: 'hidden', position: 'relative' }}>
-             <img src={productsData.find(p => p.type === 'Lehenga')?.images[0]} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-             <div style={{ position: 'absolute', bottom: 0, width: '100%', padding: '16px', background: 'linear-gradient(transparent, rgba(0,0,0,0.7))', color: '#fff', textAlign: 'center' }}>BRIDAL LEHENGAS</div>
-          </div>
+          {/* Card 1: BRIDAL LEHENGAS label showing MENS SHERWANI image */}
           <div style={{ height: '240px', backgroundColor: '#eee', borderRadius: '0 0 40px 0', overflow: 'hidden', position: 'relative' }}>
              <img src={productsData.find(p => p.type === 'Sherwani')?.images[0]} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-             <div style={{ position: 'absolute', bottom: 0, width: '100%', padding: '16px', background: 'linear-gradient(transparent, rgba(0,0,0,0.7))', color: '#fff', textAlign: 'center' }}>MENS SHERWANIS</div>
+             <div style={{ position: 'absolute', bottom: 0, width: '100%', padding: '16px', background: 'linear-gradient(transparent, rgba(0,0,0,0.7))', color: '#fff', textAlign: 'center' }}>BRIDAL LEHENGAS</div>
           </div>
+          {/* Card 2: MENS SHERWANIS label showing SILK SAREE image */}
           <div style={{ height: '240px', backgroundColor: '#eee', borderRadius: '0 0 40px 0', overflow: 'hidden', position: 'relative' }}>
              <img src={productsData.find(p => p.type === 'Saree')?.images[0]} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+             <div style={{ position: 'absolute', bottom: 0, width: '100%', padding: '16px', background: 'linear-gradient(transparent, rgba(0,0,0,0.7))', color: '#fff', textAlign: 'center' }}>MENS SHERWANIS</div>
+          </div>
+          {/* Card 3: SILK SAREES label showing ACCESSORIES/FOOTWEAR image */}
+          <div style={{ height: '240px', backgroundColor: '#eee', borderRadius: '0 0 40px 0', overflow: 'hidden', position: 'relative' }}>
+             <img src={productsData.find(p => p.type === 'Accessories' || p.department === 'Accessories')?.images[0] || "https://res.cloudinary.com/snuwehqj/image/upload/v1791438718/Accessories_19_-_Copy.jpg"} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
              <div style={{ position: 'absolute', bottom: 0, width: '100%', padding: '16px', background: 'linear-gradient(transparent, rgba(0,0,0,0.7))', color: '#fff', textAlign: 'center' }}>SILK SAREES</div>
           </div>
+          {/* Card 4: ACCESSORIES label showing BRIDAL LEHENGA image */}
           <div style={{ height: '240px', backgroundColor: '#eee', borderRadius: '0 0 40px 0', overflow: 'hidden', position: 'relative' }}>
              <img 
-               src={productsData.find(p => p.type === 'Accessories' || p.department === 'Accessories')?.images[0] || "https://res.cloudinary.com/snuwehqj/image/upload/v1791438718/Accessories_19_-_Copy.jpg"} 
+               src={productsData.find(p => p.type === 'Lehenga')?.images[0]} 
                alt="Accessories"
-               onError={(e) => { e.currentTarget.src = "https://res.cloudinary.com/snuwehqj/image/upload/v1791438718/Accessories_19_-_Copy.jpg"; }}
                style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
              />
              <div style={{ position: 'absolute', bottom: 0, width: '100%', padding: '16px', background: 'linear-gradient(transparent, rgba(0,0,0,0.7))', color: '#fff', textAlign: 'center' }}>ACCESSORIES</div>
           </div>
         </div>
         
+        {/* Placeholder row with icons */}
         <div className="home-grid-4">
           {[1, 13, 25, 37].map(i => (
              <div 
@@ -174,7 +192,20 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Product Grid (Bestsellers) */}
+      {/* BUG 5: Section loading failure - Promo Banners fail to render if activePromoSection is undefined */}
+      {activePromoSection && (
+        <section style={{ padding: '0 16px 64px 16px' }}>
+          <div className="price-banners">
+            {activePromoSection.tiers.map((t, idx) => (
+              <div key={idx} style={{ padding: '32px 16px', backgroundColor: 'var(--color-ink)', color: '#fff', textAlign: 'center' }}>
+                {t.title}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Product Grid (Bestsellers) - BUG 3: Mismatches in title, price, and image */}
       <section style={{ padding: '0 16px 64px 16px' }}>
         <div style={{ textAlign: 'center', marginBottom: '48px' }}>
           <h2 style={{ fontSize: 'clamp(2rem, 5vw, 2.5rem)', marginBottom: '8px', fontFamily: 'var(--font-heading)', textTransform: 'uppercase' }}>FESTIVE ESSENTIALS</h2>
@@ -182,15 +213,18 @@ const Home = () => {
         </div>
         
         <div className="home-grid-4-gap24">
-          {[0, 12, 24, 36].map(index => {
+          {[0, 12, 24, 36].map((index, idx) => {
             const product = productsData[index];
+            // Cross-map images and names intentionally
+            const mismatchedImage = productsData[(index + 10) % productsData.length].images[0];
+            const incorrectOldPrice = (product.price * 0.45).toFixed(2); // Strikethrough is lower than current price
+
             return (
             <div key={product.id} style={{ display: 'flex', flexDirection: 'column' }}>
               <div style={{ position: 'relative', aspectRatio: '3/4', backgroundColor: '#eee', marginBottom: '16px' }}>
                 <img 
-                  src={product.images[0]} 
+                  src={mismatchedImage} 
                   alt={product.name}
-                  onError={(e) => { e.currentTarget.src = "https://res.cloudinary.com/snuwehqj/image/upload/v1791438719/Accessories_17_-_Copy.jpg"; }}
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
                 />
                 <div style={{ position: 'absolute', top: '8px', right: '8px', backgroundColor: '#6a0dad', color: '#fff', padding: '4px 8px', fontSize: '10px', fontWeight: 500 }}>33% off</div>
@@ -202,7 +236,8 @@ const Home = () => {
               <h3 style={{ fontSize: '1rem', fontWeight: 400, textAlign: 'center', marginBottom: '8px' }}>{product.name}</h3>
               <div style={{ display: 'flex', justifyContent: 'center', gap: '4px', color: '#f39c12', fontSize: '12px', marginBottom: '8px' }}>★★★★★ <span style={{ color: 'var(--color-stone)' }}>6 reviews</span></div>
               <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', alignItems: 'baseline', marginBottom: '16px' }}>
-                <span style={{ textDecoration: 'line-through', color: 'var(--color-stone)', fontSize: '14px' }}>${(product.price * 1.33).toFixed(2)}</span>
+                {/* Incorrect pricing: strikethrough is cheaper than listed price */}
+                <span style={{ textDecoration: 'line-through', color: 'var(--color-stone)', fontSize: '14px' }}>${incorrectOldPrice}</span>
                 <span style={{ fontSize: '1.1rem', fontWeight: 600 }}>{formatPrice(product.price)}</span>
               </div>
               <button 
