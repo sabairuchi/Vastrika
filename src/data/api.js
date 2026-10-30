@@ -27,6 +27,28 @@ export async function getBestsellers(options = {}) {
   return data;
 }
 
+// Trigger controlled server error scenario on /api/test-errors
+export async function triggerErrorScenario(scenarioCode, options = {}) {
+  const query = new URLSearchParams({ scenario: scenarioCode.toString() });
+  if (options.timeout) query.set('timeout', options.timeout);
+  if (options.resource) query.set('resource', options.resource);
+
+  const headers = { ...options.headers };
+  const res = await fetch(`/api/test-errors?${query.toString()}`, { headers });
+  const data = await res.json().catch(() => ({}));
+
+  if (!res.ok) {
+    const error = new Error(data.message || `HTTP ${res.status} Error`);
+    error.status = res.status;
+    error.code = data.code || `HTTP_${res.status}`;
+    error.referenceId = data.referenceId || `VST-${res.status}-ERR`;
+    error.data = data;
+    throw error;
+  }
+
+  return data;
+}
+
 // params: { type, department, tag ('new'|'bestseller'|'sale'), q, minPrice, maxPrice, sort ('newest'|'price-low'|'price-high'|'rating'), page, limit }
 export async function getProducts(params = {}) {
   await delay();
