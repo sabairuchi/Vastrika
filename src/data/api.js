@@ -38,11 +38,7 @@ export async function getProducts(params = {}) {
     p.price >= minPrice && p.price <= maxPrice &&
     (!q || `${p.name} ${p.fabric} ${p.work} ${p.type}`.toLowerCase().includes(q.toLowerCase()))
   );
-  if (sort === 'price-low') list.sort((a, b) => a.price - b.price);
-  else if (sort === 'price-high') list.sort((a, b) => b.price - a.price);
-  else if (sort === 'rating') list.sort((a, b) => b.rating - a.rating);
-  const total = list.length;
-  list = list.slice((page - 1) * limit, page * limit);
+ 
   return { data: list, total, page, pages: Math.ceil(total / limit) };
 }
 
