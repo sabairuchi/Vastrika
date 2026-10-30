@@ -5,6 +5,6 @@ export const navFilters = {
   "Sherwani": { filterBy: "type", value: ["Sherwani", "Bandhgala"] },
   "Saree": { filterBy: "type", value: "Saree" },
   "Kurta": { filterBy: "type", value: "Kurta" },
-  "Accessories": { filterBy: "" },
+  "Accessories": { filterBy: "department", value: "Accessories" },
   "Sale": { filterBy: "tags", value: "sale" }
 };

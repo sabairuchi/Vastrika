@@ -10,6 +10,18 @@ import { Search, Heart, RefreshCw, ArrowLeft } from 'lucide-react';
 
 import { formatPrice } from '../utils/formatPrice';
 
+const ProductCard = ({ product, index, isBestsellerView = false, isSaleView = false }) => {
+  const [isWishlisted, setIsWishlisted] = useState(false);
+  const hoverImage = product.images[1] || product.images[0];
+  const discountPercent = product.originalPrice 
+    ? Math.round((1 - product.price / product.originalPrice) * 100)
+    : null;
+
+  // Check if item was added within the last 30 days
+  const isRecentNew = useMemo(() => {
+    if (!product.addedAt) return product.tags?.includes('new');
+    const addedTime = new Date(product.addedAt).getTime();
+    const thirtyDaysMs = 30 * 24 * 60 * 60 * 1000;
     return (Date.now() - addedTime) <= thirtyDaysMs;
   }, [product.addedAt, product.tags]);
 
@@ -50,7 +62,28 @@ import { formatPrice } from '../utils/formatPrice';
             </button>
 
             {/* Cutout Image with Lift & Shadow animation container */}
-   
+            <div className="bestseller-img-container relative w-[82%] h-[82%] flex flex-col items-center justify-center min-w-0">
+              <img 
+                src={product.images[0]} 
+                alt={product.name} 
+                className="bestseller-cutout-img w-full h-full object-contain z-10 drop-shadow-md transition-transform duration-400"
+              />
+              {/* Code-made Ground Shadow */}
+              <div 
+                className="bestseller-ground-shadow absolute bottom-1.5 w-[68%] h-3.5 rounded-[50%] bg-black/25 blur-md z-0 transition-transform duration-400"
+              />
+            </div>
+          </div>
+
+          {/* Card Info: Name, Price, Category */}
+          <div className="mt-3 flex flex-col gap-1 min-w-0 w-full">
+            <h4 className="text-base font-normal sm:font-medium leading-snug text-[var(--color-ink)] m-0 line-clamp-2 min-w-0">
+              {product.name}
+            </h4>
+            <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 mt-0.5 min-w-0">
+              <span className="text-sm sm:text-base font-semibold text-[var(--color-ink)] shrink-0">
+                {formatPrice(product.price)}
+              </span>
               {product.originalPrice && (
                 <span className="text-xs line-through text-[var(--color-stone)] shrink-0">
                   {formatPrice(product.originalPrice)}
@@ -67,7 +100,27 @@ import { formatPrice } from '../utils/formatPrice';
   }
 
   return (
-   
+    <motion.div
+      layout
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, scale: 0.95 }}
+      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      className="flex flex-col gap-2 sm:gap-3 min-w-0 w-full h-full"
+    >
+      <Link to={`/shop/${product.id}`} className="product-card-link flex flex-col h-full min-w-0 w-full no-underline text-inherit">
+        <div className={`relative w-full aspect-[3/4] overflow-hidden bg-[var(--color-ivory)] ${isSaleView ? 'rounded-lg' : 'rounded-none'} min-w-0`}>
+          {/* Wishlist Heart Button - min 40x40px tap target */}
+          <button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              setIsWishlisted(prev => !prev);
+            }}
+            aria-label="Wishlist"
+            className="absolute top-2 right-2 z-10 w-10 h-10 rounded-full bg-white/85 backdrop-blur-md border-none flex items-center justify-center cursor-pointer transition-transform hover:scale-110 active:scale-95 shadow-sm"
+          >
             <Heart 
               size={18} 
               strokeWidth={1.7} 
