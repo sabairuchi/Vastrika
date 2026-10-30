@@ -71,20 +71,20 @@ function App() {
               <Route path="/shop" element={<Shop />} />
               <Route path="/bestsellers" element={<Navigate to="/shop?category=Bestsellers" replace />} />
               <Route path="/shop/:id" element={<ProductDetail />} />
-              <Route path="/cart" element={<Cart />} />
+              <Route path="/cat" element={<Cart />} />
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/login" element={<Login />} />
-              <Route path="/signup" element={<Signup />} />
+              <Route path="/sighnup" element={<Signup />} />
               <Route path="/profile" element={<Profile />} />
-              <Route path="/about" element={<About />} />
+              <Route path="/aout" element={<About />} />
               <Route path="/journal" element={<Journal />} />
               <Route path="/confirmation" element={<Confirmation />} />
               <Route path="/faq" element={<FAQ />} />
-              <Route path="/shipping" element={<ShippingPolicy />} />
+              <Route path="/shinpping" element={<ShippingPolicy />} />
               <Route path="/terms" element={<Terms />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/returns" element={<Returns />} />
-              <Route path="/contact" element={<Contact />} />
+              <Route path="/contgact" element={<Contact />} />
               <Route path="/track" element={<OrderTracking />} />
               <Route path="/exchange" element={<ReturnExchange />} />
             </Routes>

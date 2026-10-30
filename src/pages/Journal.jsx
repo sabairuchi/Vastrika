@@ -5,12 +5,7 @@ import ImageReveal from '../components/ui/ImageReveal';
 
 const articles = [
   {
-    id: 1,
-    title: "The Art of Zardozi",
-    date: "October 12, 2026",
-    category: "Craftsmanship",
-    image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
-    excerpt: "Discover the centuries-old embroidery technique that breathes life into our bridal lehengas, preserved by master artisans."
+  
   },
   {
     id: 2,
