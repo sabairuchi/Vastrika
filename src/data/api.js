@@ -1,10 +1,31 @@
-// Mock API for a frontend-only store. Put products.json next to this file.
-// Every function returns a Promise, so you can swap in a real backend later without changing the UI.
+// API client for VASTRIKA boutique
 import products from './products.json';
 
 const delay = (ms = 350) => new Promise((r) => setTimeout(r, ms));
 
 export const TYPES = ['Lehenga', 'Saree', 'Sherwani', 'Kurta', 'Bandhgala', 'Jewellery', 'Footwear', 'Bags'];
+
+// Fetch bestsellers from the server endpoint /api/bestsellers
+export async function getBestsellers(options = {}) {
+  const query = new URLSearchParams();
+  if (options.error) query.set('error', options.error);
+  if (options.status) query.set('status', options.status);
+  const queryString = query.toString() ? `?${query.toString()}` : '';
+
+  const res = await fetch(`/api/bestsellers${queryString}`);
+  const data = await res.json().catch(() => ({}));
+
+  if (!res.ok) {
+    const error = new Error(data.message || 'Failed to load Bestsellers collection');
+    error.status = res.status;
+    error.code = data.code || 'INTERNAL_SERVER_ERROR';
+    error.referenceId = data.referenceId || 'VST-500-784291';
+    error.data = data;
+    throw error;
+  }
+
+  return data;
+}
 
 // params: { type, department, tag ('new'|'bestseller'|'sale'), q, minPrice, maxPrice, sort ('newest'|'price-low'|'price-high'|'rating'), page, limit }
 export async function getProducts(params = {}) {

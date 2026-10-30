@@ -5,6 +5,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import PageTransition from '../components/layout/PageTransition';
 import { Reveal, RevealGroup } from '../components/ui/Reveal';
 import productsData from '../data/products.json';
+import { getBestsellers } from '../data/api';
 import { Search, Heart, RefreshCw, ArrowLeft } from 'lucide-react';
 
 import { formatPrice } from '../utils/formatPrice';
@@ -211,6 +212,41 @@ const Shop = () => {
     document.title = `${displayCategory} | VASTRIKA`;
   }, [displayCategory]);
 
+  // Bestsellers API state (genuine HTTP request & error tracking)
+  const [bestsellersData, setBestsellersData] = useState(null);
+  const [serverError500, setServerError500] = useState(null);
+
+  useEffect(() => {
+    if (activeCategory.toLowerCase() === 'bestsellers') {
+      let isMounted = true;
+      const testError = searchParams.get('error') || searchParams.get('status');
+
+      getBestsellers({ error: testError })
+        .then((res) => {
+          if (isMounted) {
+            setBestsellersData(res.data || []);
+            setServerError500(null);
+          }
+        })
+        .catch((err) => {
+          if (isMounted) {
+            console.error('Bestsellers API Failure:', err);
+            setServerError500({
+              code: err.code || 'INTERNAL_SERVER_ERROR',
+              message: err.message,
+              referenceId: err.referenceId || 'VST-500-784291',
+              status: err.status || 500
+            });
+          }
+        });
+
+      return () => { isMounted = false; };
+    } else {
+      setServerError500(null);
+      setBestsellersData(null);
+    }
+  }, [activeCategory, searchParams]);
+
   const initialSearch = searchParams.get('search') || '';
   const [searchQuery, setSearchQuery] = useState(initialSearch);
 
@@ -276,6 +312,9 @@ const Shop = () => {
       if (filterConfig) {
         // Advanced filtering based on categories.js
         result = result.filter(p => {
+          if (activeCategory.toLowerCase() === 'bestsellers' && bestsellersData) {
+            return bestsellersData.some(b => b.id === p.id);
+          }
           if (filterConfig.filterBy === 'tags') {
             return p.tags && p.tags.includes(filterConfig.value);
           } else if (filterConfig.filterBy === 'type') {
@@ -332,7 +371,7 @@ const Shop = () => {
   const isNewCategory = activeCategory.toLowerCase() === 'new';
   const is404Active = activeCategory.toLowerCase() === 'lehenga' || searchParams.get('error') === '404' || searchParams.get('status') === '404';
 
-  const has500Error = isBestsellerCategory || searchParams.get('error') === '500' || searchParams.get('status') === '500';
+  const has500Error = !!serverError500 || searchParams.get('error') === '500' || searchParams.get('status') === '500';
   if (has500Error) {
     return (
       <PageTransition>
@@ -420,7 +459,7 @@ const Shop = () => {
               }}
             >
               <span>REF:</span>
-              <span style={{ color: 'var(--color-ink)', fontWeight: 600 }}>VST-500-784291</span>
+              <span style={{ color: 'var(--color-ink)', fontWeight: 600 }}>{serverError500?.referenceId || 'VST-500-784291'}</span>
             </div>
 
             <div 
