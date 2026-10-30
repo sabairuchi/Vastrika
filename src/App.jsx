@@ -21,8 +21,6 @@ import Profile from './pages/Profile';
 import Confirmation from './pages/Confirmation';
 import About from './pages/About';
 import Journal from './pages/Journal';
-import NotFound from './pages/NotFound';
-import HttpTestingSuite from './pages/HttpTestingSuite';
 import FAQ from './pages/FAQ';
 import ShippingPolicy from './pages/ShippingPolicy';
 import Terms from './pages/Terms';
@@ -47,7 +45,6 @@ function App() {
       '/profile': 'Profile | VASTRIKA',
       '/about': 'About | VASTRIKA',
       '/journal': 'Journal | VASTRIKA',
-      '/test-errors': 'Real HTTP Error Testing Suite | VASTRIKA',
       '/confirmation': 'Thank You | VASTRIKA'
     };
     
@@ -90,8 +87,6 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/track" element={<OrderTracking />} />
               <Route path="/exchange" element={<ReturnExchange />} />
-              <Route path="/test-errors" element={<HttpTestingSuite />} />
-              <Route path="*" element={<NotFound />} />
             </Routes>
           </AnimatePresence>
         </ErrorBoundary>
